@@ -1,0 +1,9 @@
+// .bg-primary-50, .bg-danger-90
+@for $x from 0 through 10{
+  @each $key,$value in $color-map {
+    .bg-#{$key}-#{$x*10}{
+      background: rgba($value,(($x*10)/100));
+    }
+
+  }
+}
