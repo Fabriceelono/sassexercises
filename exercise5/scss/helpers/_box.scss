@@ -1,0 +1,12 @@
+// .box-primary , .box-danger,...
+@each $key,$value in $color-map{
+      .box-#{$key}{
+        color:$value;
+        background-color: rgba($value,0.15);
+        border: solid 1px darken($value,10%);
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.25rem;
+
+      }
+}

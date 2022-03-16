@@ -1,0 +1,52 @@
+// .p-3, .pt-5, .mx-2,ml-0
+@for $i from 1 to 5{
+  .p-#{$i}{
+    padding: (#{$i/3})rem;
+  }
+  .px-#{$i}{
+    padding: 0 (#{$i})rem ;
+  }
+  .py-#{$i}{
+    padding: (#{$i})rem 0 ;
+  }
+  .pt-#{$i}{
+    padding-top:(#{$i/3})rem ;
+  }
+  .pr-#{$i}{
+    padding-right: (#{$i/3})rem;
+  }
+  .pb-#{$i}{
+    padding-bottom: (#{$i/3}rem);
+  }
+  .pl-#{$i}{
+    padding-left: (#{$i/3})rem;
+  }
+
+
+  .m-#{$i}{
+    padding: #{$i/3}rem;
+  }
+  .mx-#{$i}{
+    margin: 0 (#{$i/3})rem;
+  }
+  .my-#{$i}{
+    margin: (#{$i/3})rem 0;
+  }
+
+  .mt-#{$i}{
+    margin-top: (#{$i/3})rem;
+  }
+
+  .mr-#{$i}{
+    margin-right: (#{$i/3})rem;
+  }
+
+  .mb-#{$i}{
+    margin-bottom: (#{$i/3})rem;
+  }
+  .ml-#{$i}{
+    margin-left: (#{$i/3})rem;
+  }
+
+  }
+

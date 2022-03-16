@@ -1,0 +1,41 @@
+*{
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:$fontstack-text ;
+  @include layout(black,1.25rem);
+}
+@media screen and (max-width:600px) {
+  body{
+    font-family:$fontstack-text ;
+    @include layout(white,1rem);
+    background-color:darken(white,70%) ;
+  }
+}
+
+h1{
+  font-family:$fontstack-titles ;
+  font-size: 1.75rem;
+  padding-bottom: 10px;
+}
+
+article{
+  p{
+    padding-bottom: 10px;
+  }
+}
+
+a{
+  display: block;
+  width: 130px;
+  font-family:$fontstack-titles ;
+  @include layout(black,1rem);
+  margin-left: 0;
+  &:hover{
+    @include layout(dimgray,1rem);
+    margin-left: 0;
+  }
+}

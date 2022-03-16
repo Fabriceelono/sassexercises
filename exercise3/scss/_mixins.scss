@@ -1,0 +1,10 @@
+@use "sass:color";
+@mixin layout($color,$size:14px){
+  color: $color;
+  background-color: lighten($color,80%);
+  font-size:$size;
+  margin:$size ;
+  padding:$size ;
+  line-height: 21px;
+  border: solid 5px $color;
+}

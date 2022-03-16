@@ -1,0 +1,35 @@
+@use "sass:color";
+
+$small:576px;
+$medium:768px;
+
+@mixin layout($color,$size:14px){
+  color: $color;
+  background-color: lighten($color,80%);
+  font-size:$size;
+  margin:$size ;
+  padding:$size ;
+  line-height: 21px;
+  border: solid 5px $color;
+}
+
+*{
+  font-family: Verdana, sans-serif;
+  padding:20px;
+}
+
+#container{
+  @include layout(darkred,14px);
+}
+
+@media screen and (max-width:$small) {
+  #container {
+    @include layout(darkblue, 16px);
+  }
+}
+
+@media screen and (min-width:$medium) {
+  #container {
+    @include layout(darkgreen, 20px);
+  }
+}
